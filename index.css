@@ -44,6 +44,11 @@ body {
     text-align: center;
 }
 
+#assignment-list li{
+    background-color: #dcddde;
+    border-radius: 2rem;
+}
+
 #assignment-list li:hover{
     font-size: 1.6rem;
     transition: 0.3s;
