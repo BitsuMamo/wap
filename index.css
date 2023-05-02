@@ -55,6 +55,7 @@ body {
 #assignment-list li{
     background-color: #dcddde;
     border-radius: 2rem;
+    width: 100%;
 }
 
 #assignment-list li:hover{
