@@ -23,7 +23,6 @@ body {
 #box{
     border: 1px solid black;
     width: 30%;
-    /* height: 30vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
