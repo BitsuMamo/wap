@@ -6,8 +6,6 @@ const task = document.getElementById('task');
 let listOfTasks = loadTasksFromLocalDB();
 refreshTask();
 
-loadTasksFromLocalDB();
-
 function refreshTask() {
     data.value = "";
 
@@ -18,26 +16,34 @@ function refreshTask() {
     })
 
     data.value = text;
-
 }
 
-function saveTaskToLocalDB(task) {
-    localStorage.setItem('tasks', listOfTasks);
+function saveTaskToLocalDB() {
+    localStorage.setItem('tasks', JSON.stringify(listOfTasks));
+
 }
 
 function loadTasksFromLocalDB() {
-    const tasks = localStorage.getItem('tasks');
-    if(task == "") return [];
+    const tasksFromDB = localStorage.getItem('tasks');
+    if(tasksFromDB == null) return [];
+    
 
-    return tasks.split(',');
+    return JSON.parse(tasksFromDB)
 }
 
 addTask.addEventListener('click', () => {
-    if (task.value === "" || task.value == null) return
-    listOfTasks.push(task.value)
+    let taskStringaValue = task.value.trim();
+
+    if(taskStringaValue == null) return;
+    if (taskStringaValue == "") return
+
+    listOfTasks.push(taskStringaValue)
+
     saveTaskToLocalDB();
     refreshTask();
 })
+
+
 
 clearTasks.addEventListener('click', () => {
     listOfTasks = [];
