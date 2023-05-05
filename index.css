@@ -57,6 +57,7 @@ body {
     width: 100%;
 }
 
+
 #assignment-list li:hover{
     font-size: 1.6rem;
     transition: 0.3s;
@@ -69,4 +70,5 @@ body {
 a{
     color: black;
     text-decoration: none;
+    width: 100%;
 }
