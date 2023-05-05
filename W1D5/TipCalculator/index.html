@@ -19,7 +19,7 @@
 
         let totalWithTip = (Number(subTotal.value) * Number(tip.value)) / 100;
 
-        total.innerHTML = dollarUS.format(totalWithTip);
+        total.innerHTML = dollarUS.format(subTotal.value + totalWithTip);
 
     }
 
