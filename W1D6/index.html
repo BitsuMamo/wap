@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="decoratemytext.css">
     <title>Document</title>
 </head>
-<body>
-    
 
-    <script src="index.js"></script>
+<body>
+    <h1>Text Decorator</h1>
+
+    <div>
+        <img src="decorated.gif" alt="very decorated!" />
+    </div>
+
+    <!-- Your UI controls go here -->
+
+    <fieldset>
+        <legend>Text</legend>
+        <textarea name="large-text" id="large-text" cols="30" rows="4">
+        </textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Decoration</legend>
+        <div class="row">
+            <button id="bigger-decoration">Bigger Decoration!</button>
+            <button id="pig-latin">Igpay Atinlay</button>
+            <button id="malkovich">Malkovich</button>
+        </div>
+        <div class="row">
+            <label for="bling">Bling</label>
+            <input type="checkbox" name="bling" id="bling">
+        </div>
+    </fieldset>
+
+
+    <script src="decoratemytext.js"></script>
 </body>
+
 </html>
