@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.col{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30%;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+#deposit-page{
+    display: none;
+}
+
+#withdraw-page{
+    display: none;
+}

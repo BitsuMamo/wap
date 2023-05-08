@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bank Account</title>
+</head>
+
+<body>
+
+    <div id="main-page">
+        <div class="col">
+            <div class="row">
+                <label for="account-name">Account Name:</label>
+                <input type="text" name="account-name" id="account-name-input" placeholder="Account Name">
+            </div>
+            <div class="row">
+
+                <label for="deposit">Deposit:</label>
+                <input type="number" name="deposit" id="deposit-input" placeholder="10000">
+            </div>
+            <div class="row">
+                <button id="deposit-btn">Deposit</button>
+                <button id="withdraw-btn">Withdraw</button>
+
+            </div>
+            <div class="row">
+                <button id="create-account-btn">Create new Account</button>
+            </div>
+            <div class="row">
+                <textarea name="accounts" id="accounts-text-area" cols="60" rows="10" disabled></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div id="deposit-page">
+        <div class="col">
+            <div class="row">
+                <select name="accounts" id="deposit-accounts-select">
+                </select>
+            </div>
+
+            <div class="row">
+                <label for="deposit-amount">Amount</label>
+                <input name= "deposit-amount" id="deposit-amount-input"  type="number" placeholder="10000">
+            </div>
+
+            <div class="row">
+                <button id="deposit-amount-btn" disabled>Submit</button>
+            </div>
+
+            <div class="row"><button id="go-back-deposit">Go Back</button></div>
+        </div>
+    </div>
+
+    <div id="withdraw-page">
+        <div class="col">
+            <div class="row">
+                <select name="accounts" id="withdraw-accounts-select">
+                </select>
+            </div>
+
+            
+            <div class="row">
+                <label for="withdraw-amount">Amount</label>
+                <input name= "withdraw-amount" id="withdraw-amount-input"  type="number" placeholder="10000">
+            </div>
+            
+            <div class="row">
+                <button id="withdraw-amount-btn">Submit</button>
+            </div>
+            <div class="row"><button id="go-back-withdraw">Go Back</button></div>
+        </div>
+    </div>
+
+    <script src="BankAccount.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
