@@ -1,0 +1,47 @@
+1. In jQuery terminology, what is the difference between the “jQuery function” and the “jQuery object”?
+
+$("div > h1").css("background-color", "red");
+
+2. Write jQuery code to find all h1 elements that are children of a div element and make their background
+color red.
+Sample HTML:
+
+<body>
+	<h1>abc</h1>
+	<br>
+	<div>
+		<h1>div-1</h1>
+		<h1>div-2</h1>
+	</div>
+	<h1>xyz</h1>
+</body>
+
+
+In jQuery terminology, the "jQuery function" refers to the global jQuery function, denoted by `$` or `jQuery`. It is a factory function that creates jQuery objects.
+
+A "jQuery object" is an object that is returned by calling the jQuery function on a DOM element, a selector, or another jQuery object. It is a wrapper around one or more DOM elements that provides a set of methods for manipulating them.
+
+When the jQuery function is called with a selector or a DOM element, it returns a jQuery object that contains a set of DOM elements that match the selector or the element itself. 
+
+For example, `$("div")` returns a jQuery object that contains all `div` elements in the document.
+
+Once a jQuery object is created, we can use its methods to manipulate its contents, apply CSS styles, bind event handlers, and more. For example, `$("div").addClass("highlight")` adds the CSS class "highlight" to all `div` elements.
+
+In summary, the jQuery function creates jQuery objects, and jQuery objects provide a set of methods for manipulating DOM elements.
+
+
+
+3. Use a jQuery method to insert the text "YES!" at the end of the <p> element.
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	<!—INSERT YOUR JQUERY CODE HERE - - >
+</script>
+</head>
+<body>
+	<p>Is jQuery FUN or what? </p>
+</body>
+</html>
+
+$("p").append("YES!");

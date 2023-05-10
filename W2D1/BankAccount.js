@@ -1,6 +1,6 @@
 class BankAccount{
-    accoutName;
-    balance;
+    #accoutName;
+    #balance;
 
     static accountInfoList = [];
     

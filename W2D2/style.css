@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14pt;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #ccccff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1{
+    padding: 1rem;
+    font-size: 32pt;
+    font-weight: bold;
+}
+
+.draw{
+    width: 90%;
+    height: 400px;
+    background-color: white;
+    font-size: 12pt;
+    resize: none;
+}
+
+.row{
+    display: flex;
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    gap: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.controls *{
+    width: 80%;
+}
+
+.controls fieldset{
+    padding: 0.5rem;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.controls button{
+    width: 100px;
+    font-weight: bold;
+}

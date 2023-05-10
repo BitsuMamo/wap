@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ASCIImation</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="title">
+            <h1>
+                CS472: ASCII Animation Viewer
+            </h1>
+        </div>
+
+        <textarea id="draw" cols="80" rows="20">
+
+        </textarea>
+        <div class="controls">
+            <fieldset>
+                <legend>Play Controls</legend>
+                <div class="row">
+                    <button id="start-btn">Start</button>
+                    <button id="stop-btn">Stop</button>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Animation</legend>
+                <select name="animation" id="animation-select">
+                    <option value="blank" selected>Blank</option>
+                    <option value="custom" selected>Custom</option>
+                    <option value="exercise" selected>Exercise</option>
+                    <option value="juggler" selected>Juggler</option>
+                    <option value="bike" selected>Bike</option>
+                    <option value="dive" selected>Dive</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Size</legend>
+                <select name="size" id="size-select">
+                    <option value="10pt">Tiny</option>
+                    <option value="12pt" selected>MEDIUM</option>
+                    <option value="16pt">Large</option>
+                    <option value="24pt">Extra Large</option>
+                    <option value="32pt">XXL</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Speed</legend>
+                <div class="row">
+                    <input type="checkbox" name="turbo" id="turbo-check-box">
+                    <label for="turbo">Turbo</label>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+
+
+    <script src="animations.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
