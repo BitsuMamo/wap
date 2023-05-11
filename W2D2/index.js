@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     $('#animation-select').change(function (e) {
         e.preventDefault();
-        console.log("hello")
+        $('#stop-btn').click();
         selectAnimation();
     });
 

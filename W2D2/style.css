@@ -21,7 +21,7 @@
     font-weight: bold;
 }
 
-.draw{
+#draw{
     width: 90%;
     height: 400px;
     background-color: white;
