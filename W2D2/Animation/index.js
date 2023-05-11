@@ -35,6 +35,7 @@ $(document).ready(function () {
         e.preventDefault();
         $('#stop-btn').click();
         selectAnimation();
+        $('#start-btn').click();
     });
 
     $('#size-select').change(function (e) { 
