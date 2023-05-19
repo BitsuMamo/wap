@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title">The Number Quiz</h1>
+        <div class="row">
+            <lable class="score-label">Your Current Score is: </lable>
+            <lable id="score"></lable>
+        </div>
+        <div id="removable">
+            <p class="instruction" id="sequence-instruction">Guess the next number in the sequence.</p>
+            <div class="sequence-container">
+                <p id="sequence"></p>
+            </div>
+            <div class="row">
+                <lable class="answer-lable" id="answer-lable">Your answer: </lable>
+                <input type="number" id="answer-input">
+            </div>
+            <button id="submit-btn" class="primary">Submit</button>
+        </div>
+        <p id="end-sentence" style="display: none;"></p>
+    </div>
+
+
+    <script src="index.js" defer></script>
+</body>
+</html>
