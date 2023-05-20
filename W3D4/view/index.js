@@ -16,6 +16,8 @@ async function initializeSession() {
     const totalCount = await totalCountFetch.json();
     sessionStorage.totalCount = totalCount.length;
 }
+
+
 async function fetchQuiz(count){
     const quizFetch = await fetch(`http://localhost:8080/getQuestion/${count}`);
     if (!quizFetch.ok) {
