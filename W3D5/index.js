@@ -3,26 +3,27 @@ $(document).ready(() => {
 });
 
 function getPicture() {
-    $.ajax({
-        url: "https://api.nasa.gov/planetary/apod",
-        type: "GET",
-        data: {
-            api_key: "DEMO_KEY",
-            date: $("#date").val()
-        },
-        dataType: "json",
-        "success": showPicture,
-        "error": noPicture
-    });
+    // Ajax Verison 
+    // $.ajax({
+    //     url: "https://api.nasa.gov/planetary/apod",
+    //     type: "GET",
+    //     data: {
+    //         api_key: "DEMO_KEY",
+    //         date: $("#date").val()
+    //     },
+    //     dataType: "json",
+    //     "success": showPicture,
+    //     "error": noPicture
+    // });
 
     /* // Fetch Version
 
+    */
     fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=" + encodeURIComponent(document.getElementById("date").value))
         .then(response => response.json())
         .then(data => showPicture(data))
         .catch(error => noPicture(error)
         );
-    */
 };
 
 function showPicture(data) {
